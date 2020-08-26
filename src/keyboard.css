@@ -1,0 +1,103 @@
+.keyboard {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top:300px;
+    left: 0;
+    bottom: 60px;
+    width: 100%;
+    background-color:rgb(33, 37, 41);
+    height: 300px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    transition: display 0.4s;
+  }
+
+  .keyboard--hidden {
+   display: none;
+}
+  
+  .keyboard__buttons {
+    margin: 0 auto;
+    width: 1000px;
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+  
+  .keyboard__button {
+    width: 6%;
+    height: 45px;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background-color: gray;
+    color: #ffffff;
+    font-size: 1.6em;
+    cursor: pointer;
+    /* display: inline-flex;
+    align-items: center;
+    justify-content: center;*/
+    outline: none;
+    vertical-align: top;
+    padding: 0;
+    position: relative;
+    transition: all .07s ease;
+  }
+  
+  .Backspace,
+  .Tab {
+    width: 12%;
+    font-size: 1.6em;
+  }
+  
+  .CapsLock,
+  .Enter {
+    width: 18%;
+    max-width: 108px;
+    font-size: 18px;
+  }
+  
+  .Space {
+    width: 36%;
+    max-width: 500px;
+  }
+  
+  .ShiftLeft {
+    width: 18%;
+    max-width: 90px;
+  }
+  
+  .ShiftRight {
+    width: 18%;
+    max-width: 126px;
+    font-size: 1.6em;
+  }
+  
+  .ContolRight, .ControlLeft  {
+    width: 12%;
+    max-width: 160px;
+  }
+  
+  .clicked {
+    background-color: hotpink;
+     transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+     
+  }
+  
+  .keyboard__button:active {
+    background-color: hotpink;
+    transform: scale(1.1);
+   border-color: #ffc600;
+   box-shadow: 0 0 1rem #ffc600;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .keyboard__buttons {
+      width: 100%;
+    }
+  }
+  
+  
